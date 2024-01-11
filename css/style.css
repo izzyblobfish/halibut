@@ -1,0 +1,284 @@
+
+
+body {
+   background-color: rgb(2, 2, 23);
+   margin: 0;
+   padding: 0;
+   overflow: hidden; 
+   font-weight: bolder;
+}
+
+.container{
+   display: grid;
+   grid-template-columns: min(25%, 230px) 1fr;
+
+}
+
+.index{
+   background-image: linear-gradient(rgb(0, 8, 65),rgb(8, 8, 0)) ;
+   padding-top: 50px;
+   box-shadow: -0px -0px 20px -8px rgb(0, 25, 254) inset;
+}
+
+.content{
+   position: relative;
+   background-color: rgb(0, 0, 0);
+   background-image: url("/img/oarfishbg.svg"),linear-gradient( rgb(8, 8, 0), rgb(0, 9, 89)) ;
+   background-repeat: repeat, no-repeat;
+   background-attachment: fixed;
+   background-size: 500px 500px, cover;
+   box-shadow: inset 0px 0px 10px 10px rgb(0, 0, 0);
+   background-position: -30px -30px, 0px;
+   height: 100vh;
+   overflow-y: scroll; 
+   -ms-overflow-style: none; 
+   scrollbar-width: none;
+   
+}
+
+.content::-webkit-scrollbar {
+   display: none;
+}
+
+
+
+
+.title{
+   text-align: center;
+  
+}
+
+.name{
+   font-size: min(4vw, 35px);
+   color: #e61c43;
+   text-shadow: 0px 0px 10px #000000;
+
+}
+
+
+
+ .index_buttons{
+   display: grid;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   text-align: center;
+
+ }
+
+ 
+
+ .indexbutton{
+   font-size: min(3vw, 25px);
+   color: #00497e;
+  
+   margin-top: 5px;
+   margin-bottom: 5px;
+   padding-top: 6px;
+   padding-bottom: 3px;
+   border: 3px solid #e51b43;   
+   background-color: #3bb493;
+   margin-left: min(2vw, 10px);
+   margin-right: min(2vw, 10px);
+   border-radius: 30px;
+   background-color: #68bfbc;
+   box-shadow: inset 0px 0px 5px 2px rgb(0, 24, 130);
+  
+
+
+ }
+
+.indexbutton:hover{
+   border: 3px solid #c4e9fb;
+   color: #e51b43;
+   box-shadow: inset 0px 0px 5px 2px rgb(0, 24, 130);
+   background-color: #aff4f2;
+  
+ 
+}
+
+a:link {
+   text-decoration: none;
+   color: rgb(127, 140, 255);
+   cursor: pointer; 
+ }
+
+
+ a:hover{
+   color: #fffcfd;
+   cursor: pointer; 
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+ }
+
+.div{
+   border-radius: 20px;
+   position: absolute;
+   margin: 30px;
+   border: 5px solid #e51b43;
+   background-color: rgb(0, 8, 65);
+   padding: 20px;
+   min-height: auto;
+   box-shadow: 0px 0px 10px 10px rgb(0, 0, 0), -0px -0px 10px rgb(0, 0, 0) inset;
+   max-height: calc(100% - 110px);
+   width: calc(100% - 110px);
+   overflow-y: scroll;
+   -ms-overflow-style: none; 
+   scrollbar-width: none;
+   opacity: 0;
+   pointer-events: none;
+  
+   
+   
+}
+
+.div.show{
+   opacity: 1;
+   pointer-events: all;
+   animation: zoom 0.1s linear;
+   
+}
+
+
+ @keyframes zoom {
+   from {
+     opacity: 0;
+     
+   }
+   to {
+      opacity: 1;
+     
+   }
+ }
+
+
+
+.content_div::-webkit-scrollbar {
+   display: none;
+}
+
+
+.div_title{
+   font-size: min(6vw, 30px);
+   color: #e61c43;
+}
+
+.div_body{
+   font-size: min(3vw, 20px);
+   color: #77c6ae;
+
+}
+
+
+.emphasis{
+
+   font-size: min(6vw, 25px);
+   color: #e61c43;
+
+}
+
+.tab{
+
+   margin-left: 30px;
+}
+
+.logentry{
+   border-radius: 20px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   padding: 10px;
+   border: 2px solid rgb(189, 0, 0);
+   background-color: #00497e;
+   max-height: 200px;
+   overflow-y: scroll; 
+   -ms-overflow-style: none; 
+   scrollbar-width: none;
+   box-shadow: inset 0px 0px 5px 2px rgb(0, 24, 130);
+   
+}
+
+
+.comm_examples{
+
+   display: flex;
+   grid-template-columns: 1fr 1fr;
+   flex-wrap: wrap;
+   column-gap: 30px;
+}
+
+
+
+.comm_example{
+
+   margin-top: 10px;
+   margin-bottom: 10px;
+   padding: 10px;
+   border: 2px solid rgb(189, 0, 0);
+   background-color: rgb(26, 35, 154);
+   width: fit-content;
+   
+}
+
+.logentry::-webkit-scrollbar {
+   display: none;
+}
+
+.logtitle{
+   color: rgb(189, 0, 0);
+   font-size: min(4vw, 30px);
+   padding: 0;
+
+}
+
+
+.red{
+   color: #e61c43;
+
+}
+
+.logbody{
+   padding-top: 0px;
+   padding-bottom: 0px;
+   margin-top: 5px;
+   margin-bottom: 5px;
+
+
+}
+
+.lastupdated{
+   font-size: min(3vw, 15px);
+   margin: 10px;
+   color: #e61c43;
+
+}
+
+.links_buttons{
+
+   margin-top: 30px;
+   margin-bottom: 30px;
+}
+
+.linksbutton{
+   padding-top: 5px;
+   padding-bottom: 5px;
+   padding-left: 10px;
+   padding-right: 10px;
+   border: 2px solid rgb(189, 0, 0);
+   background-color: rgb(26, 35, 154);
+
+   font-size: min(4vw, 30px);
+}
+
+.linksbutton:hover{
+
+   border: 2px solid rgb(189, 0, 0);
+   background-color: rgb(11, 14, 61);
+
+
+}
+
+
+
