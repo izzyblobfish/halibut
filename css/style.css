@@ -166,6 +166,11 @@ a:link {
    
 }
 
+.div::-webkit-scrollbar{
+   display: none;
+   
+  }
+ 
 .div.show{
    opacity: 1;
    pointer-events: all;
