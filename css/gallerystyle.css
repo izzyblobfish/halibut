@@ -455,10 +455,11 @@ body {
    align-items: center;
    object-fit: contain;
    z-index: 2;
-   background-image: url('../img/fishloader.svg');
+   background-color: #000;
+ /*  background-image: url('../img/fishloader.svg');
    background-size: 200px;
    background-repeat: no-repeat;
-   background-position: center;
+   background-position: center; */
 
  }
 
