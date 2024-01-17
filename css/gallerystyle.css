@@ -370,6 +370,7 @@ body {
    border-color: rgb(108, 0, 0);
    background-color: rgb(108, 0, 0);
    animation: fade 0.1s linear;
+   cursor: zoom-in;
    
 }
 
