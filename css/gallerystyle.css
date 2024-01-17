@@ -570,6 +570,16 @@ body {
    
  }
 
+ .entryIndexIndicator{
+  color: white;
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  font-size: 20px;
+  text-shadow: 2px 2px 2px #000;
+ 
+}
+
  .close:hover {
   color: rgb(255, 255, 255);
   background-image: radial-gradient(rgba(0, 21, 255, 0.504), transparent);
