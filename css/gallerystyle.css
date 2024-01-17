@@ -571,6 +571,7 @@ body {
  }
 
  .entryIndexIndicator{
+  z-index: 3;
   color: white;
   position: fixed;
   left: 20px;
