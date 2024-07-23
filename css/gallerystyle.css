@@ -667,14 +667,14 @@ top: 80%;
 
 .prevBtn{
 background-size: 100%;
-width: 1.5em;
+width: 1.2em;
 height: 3em;
 
 }
 
 .nextBtn{
 background-size: 100%;
-width: 1.5em;
+width: 1.2em;
 height: 3em;
 margin-right: 0px;
 
@@ -682,10 +682,12 @@ margin-right: 0px;
 
 .prevBtn:hover{
   background-image: url('../img/prev.svg'), none;
+  background-color: transparent;
 }
 
 .nextBtn:hover{
   background-image: url('../img/next.svg'), none;
+  background-color: transparent;
 }
 
 .mail_container{
