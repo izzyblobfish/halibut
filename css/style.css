@@ -1,38 +1,69 @@
 
+*{
+   scrollbar-color: rgb(194, 201, 0) blue;
+
+}
+::-webkit-scrollbar{
+   background: blue;
+   
+}
+
+::-webkit-scrollbar-thumb{
+   background: rgb(194, 201, 0);
+   border-radius: 50vh;
+   border: 3px solid blue;
+}
 
 body {
    background-color: rgb(2, 2, 23);
    margin: 0;
    padding: 0;
-   overflow: hidden; 
+   overflow: auto; 
    font-weight: bolder;
+   overflow: hidden;
+   
 }
 
 .container{
    display: grid;
-   grid-template-columns: min(25%, 230px) 1fr;
+   grid-template-columns: 230px 1fr;
 
 }
 
 .index{
-   background-image: linear-gradient(rgb(0, 8, 65),rgb(8, 8, 0)) ;
+   background-image: linear-gradient(to right, blue, black, rgb(55, 55, 255),  rgb(168, 168, 255), rgb(206, 206, 255), rgb(255, 255, 255), rgb(206, 206, 255), rgb(168, 168, 255),rgb(55, 55, 255), black, blue) ;
    padding-top: 50px;
-   box-shadow: -0px -0px 20px -8px rgb(0, 25, 254) inset;
+ /*  box-shadow: -0px -0px 10px 2px rgb(23, 23, 116) inset; */
+  
+}
+
+.underline{
+   color: white;
+   
+}
+
+.underline:hover{
+   color: yellow;
+   
 }
 
 .content{
    position: relative;
-   background-color: rgb(0, 0, 0);
-   background-image: url("../img/oarfishbg.svg"),linear-gradient( rgb(8, 8, 0), rgb(0, 9, 89)) ;
-   background-repeat: repeat, no-repeat;
+   background-color: rgb(69, 0, 0);
+  /* background-image: url("../img/des.png");
+  background-image: repeating-radial-gradient(blue 20%, black 35%, rgb(126, 126, 0), rgb(219, 227, 0) 70%,rgb(219, 227, 0));
+  background-image: linear-gradient(80deg, black,rgb(0, 0, 173) 40%, rgb(0, 72, 189) 50%, rgb(255, 255, 255));*/
+ background-image: linear-gradient(black,blue, blue);
+  background-repeat: cover;
    background-attachment: fixed;
-   background-size: 500px 500px, cover;
-   box-shadow: inset 0px 0px 10px 10px rgb(0, 0, 0);
-   background-position: -30px -30px, 0px;
+   background-size: 50px;
+   
+   background-position: 15px 0px, 0px;
    height: 100vh;
    overflow-y: scroll; 
    -ms-overflow-style: none; 
    scrollbar-width: none;
+   box-shadow: inset 0px 0px 0px 10px rgb(0, 0, 0);
    
 }
 
@@ -49,9 +80,9 @@ body {
 }
 
 .name{
-   font-size: min(4vw, 35px);
-   color: #e61c43;
-   text-shadow: 0px 0px 10px #000000;
+   font-size: 35px;
+   color: rgb(246, 255, 0);
+   text-shadow: 3px 2px 2px #000000;
 
 }
 
@@ -62,33 +93,33 @@ body {
    padding-top: 20px;
    padding-bottom: 20px;
    text-align: center;
+   
 
  }
 
  
 
  .indexbutton{
-   font-size: min(3vw, 25px);
-   color: #00497e;
+   font-size: 25px;
+   color: rgb(194, 201, 0);
   
    margin-top: 5px;
    margin-bottom: 5px;
    padding-top: 6px;
    padding-bottom: 3px;
-   border: 3px solid #e51b43;   
-   background-color: #3bb493;
+   border: 3px solid rgb(194, 201, 0) ;   
+   background-color: #000000;
    margin-left: min(2vw, 10px);
    margin-right: min(2vw, 10px);
    border-radius: 30px;
-   background-color: #68bfbc;
-   box-shadow: inset 0px 0px 5px 2px rgb(0, 24, 130);
+   box-shadow: inset 0px 0px 5px 2px rgb(0, 0, 0), 3px 3px 3px black;
   
 
 
  }
 
  a:link {
-   color: #00497e;
+   color: rgb(194, 201, 0);
     text-decoration: none;
     
     
@@ -96,7 +127,7 @@ body {
   
  
   a:visited {
-   color: #00497e;
+   color: rgb(194, 201, 0);
  
     text-decoration: none;
     
@@ -119,17 +150,17 @@ body {
 
 
 .indexbutton:hover{
-   border: 3px solid #c4e9fb;
-   color: #e51b43;
-   box-shadow: inset 0px 0px 5px 2px rgb(0, 24, 130);
-   background-color: #aff4f2;
+   border: 3px solid rgb(246, 255, 0);
+   color: rgb(246, 255, 0);
+   box-shadow: inset 0px 0px 5px 2px rgb(0, 24, 130), 3px 3px 10px black;
+   background-color: #000000;
   
  
 }
 
 a:link {
    text-decoration: none;
-   color: #00497e;
+   color: rgb(194, 201, 0);
    cursor: pointer; 
  }
 
@@ -143,33 +174,29 @@ a:link {
    -moz-user-select: none;
    -ms-user-select: none;
    user-select: none;
+   font-style: italic;
  }
 
 .div{
-   border-radius: 20px;
+   border-radius: 0px;
    position: absolute;
    margin: 30px;
-   border: 5px solid #e51b43;
-   background-color: rgb(0, 8, 65);
+   border: 3px solid blue;
+   background-color: rgb(0, 0, 0);
    padding: 20px;
    min-height: auto;
    box-shadow: 0px 0px 10px 10px rgb(0, 0, 0), -0px -0px 10px rgb(0, 0, 0) inset;
-   max-height: calc(100% - 110px);
+   max-height: calc(100% - 100px);
    width: calc(100% - 110px);
-   overflow-y: scroll;
-   -ms-overflow-style: none; 
-   scrollbar-width: none;
+   overflow-y: auto;
    opacity: 0;
    pointer-events: none;
+   padding-bottom: 10px;
   
    
    
 }
 
-.div::-webkit-scrollbar{
-   display: none;
-   
-  }
  
 .div.show{
    opacity: 1;
@@ -198,21 +225,22 @@ a:link {
 
 
 .div_title{
-   font-size: min(6vw, 30px);
-   color: #e61c43;
+   font-size: 30px;
+   color: rgb(246, 255, 0);
 }
 
 .div_body{
-   font-size: min(3vw, 20px);
-   color: #77c6ae;
+   font-size: 20px;
+   color: rgb(194, 201, 0);
 
 }
 
 
 .emphasis{
 
-   font-size: min(6vw, 25px);
-   color: #e61c43;
+   font-size: 25px;
+   color: #0008ff;
+   text-decoration: underline;
 
 }
 
@@ -227,12 +255,13 @@ a:link {
    margin-bottom: 10px;
    padding: 10px;
    border: 2px solid rgb(189, 0, 0);
-   background-color: #00497e;
+   background-color: #8dcfff;
    max-height: 200px;
    overflow-y: scroll; 
    -ms-overflow-style: none; 
    scrollbar-width: none;
    box-shadow: inset 0px 0px 5px 2px rgb(0, 24, 130);
+   
    
 }
 
@@ -287,7 +316,8 @@ a:link {
 .lastupdated{
    font-size: min(3vw, 15px);
    margin: 10px;
-   color: #e61c43;
+   color: rgb(246, 255, 0);
+   text-shadow: 3px 2px 2px #000000;
 
 }
 
@@ -295,26 +325,194 @@ a:link {
 
    margin-top: 30px;
    margin-bottom: 30px;
+   
 }
+
+
 
 .linksbutton{
    padding-top: 5px;
    padding-bottom: 5px;
-   padding-left: 10px;
-   padding-right: 10px;
-   border: 2px solid rgb(189, 0, 0);
-   background-color: rgb(26, 35, 154);
+   padding-left: 20px;
+   padding-right: 20px;
+   margin-top: 20px;
+   margin-bottom: -10px;
+   font-size: 20px;
 
-   font-size: min(4vw, 30px);
+   border: 3px solid rgb(194, 201, 0);
+   background-color: #000000;
+   border-radius: 20px;
+   width: fit-content;
+   color: rgb(194, 201, 0);
+   width: calc(100% - 45px);
+   box-shadow: 0px 0px 5px 3px inset black;
 }
 
 .linksbutton:hover{
+   color: rgb(246, 255, 0);
+   border-color: rgb(246, 255, 0);
+   box-shadow: inset 0px 0px 5px 2px rgb(0, 24, 130);
 
-   border: 2px solid rgb(189, 0, 0);
-   background-color: rgb(11, 14, 61);
+}
 
+.entry_title{
+   padding: 0;
+   margin: 0;
+   margin-bottom: 4px;
+   margin-top: 4px;
+   text-decoration: underline;
+}
 
+@media (max-width: 600px){
+
+   body{
+      overflow-y: auto;
+      overflow-x: hidden;
+   }
+   .container{
+  /*    display: grid;
+      grid-template-columns: 1fr;
+      */
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+   
+   }
+.index_buttons{
+   width: 400px;
+   margin: 0 auto;
+   
+}
+.index{
+   display: grid;
+   padding-top: 25px;
+   
+
+}
+
+.content{
+   background-image: linear-gradient(black, black, blue);
+   width: 100%;
+ 
+   
+   
+}
+.indexbutton{
+   font-size: 27px;
+}
+
+.name{
+   font-size: 50px;
+   margin-top: 10px;
+}
+.div{
+   max-height: calc(100% - 95px);
+   overflow-x: hidden;
+}
+.div_title{
+   font-size: 2.5em;
+}
+
+.div_body{
+   font-size: 1.7em;
+}
+
+.emphasis{
+   font-size: 1.2em;
+}
+.lastupdated{
+   font-size: 1.2em;
+   padding-top: 20px;
+}
+
+.linksbutton{
+   font-size: 1em;
+  
 }
 
 
 
+   
+}
+
+
+@media only screen and (max-device-width: 480px) {
+   
+body{
+   overflow-y: auto;
+   overflow-x: hidden;
+}
+   .container{
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+   
+   }
+.index_buttons{
+   
+   margin: 0 auto;
+   width: 55%;
+   
+}
+.index{
+   display: grid;
+   grid-template-rows: 0.2fr 1fr;
+   padding-top: 25px;
+   
+   
+
+}
+.content{
+   background-image: linear-gradient(black, black, blue);
+}
+.indexbutton{
+   font-size: 50px;
+   border-radius: 50vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 0px;
+   margin: 3px;
+   max-height: 100px;
+}
+.name{
+   font-size: 5em;
+  
+}
+.title{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 10px;
+   
+
+
+}
+.div{
+   padding: 40px;
+   width: calc(100% - 150px);
+   max-height: calc(100% - 150px);
+}
+.div_title{
+   font-size: 4em;
+}
+
+.div_body{
+   font-size: 3em;
+}
+
+.emphasis{
+   font-size: 1.2em;
+}
+.lastupdated{
+   font-size: 2em;
+   padding-top: 20px;
+}
+
+.linksbutton{
+   font-size: 1em;
+   padding: 30px;
+   width: calc(100% - 60px);
+}
+
+}

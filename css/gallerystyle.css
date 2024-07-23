@@ -110,6 +110,7 @@ body {
  a:hover {
    color: #ffffff;
    text-shadow: 2px 2px 6px #000;
+   font-style: italic;
  }
  
  
@@ -379,6 +380,7 @@ body {
   border-style: inset;
    background-color: rgb(62, 8, 8);
    border-color: rgb(62, 8, 8);
+   font-style: italic;
 
 }
 
@@ -479,57 +481,48 @@ body {
   left: 0px;
    z-index: 3;
    background-color: transparent;
+   background-image: url('../img/prev.svg');
    border: none;
-   color: rgb(255, 255, 255);
-   padding: 20px;
-   padding-left: 30px;
-   padding-bottom: 30px;
-   padding-right: 30px;
-   padding-top: 5px;
+   color: transparent;
    text-align: center;
    text-decoration: none;
-   display: inline-block;
    font-size: 100px;
-   margin: 2px;
-   margin-left: -20px;
    cursor: pointer;
-   left: 0px;
-   text-shadow: 2px 2px 2px #000;
+   background-repeat: no-repeat;
+   background-size: 70px 70px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+
 
 }
 .nextBtn{
   position: fixed;
   right: 0px;
-  z-index: 3;
-  background-color: transparent;
-  border: none;
-  color: rgb(255, 255, 255);
-  padding: 20px;
-  padding-bottom: 30px;
-   padding-left: 30px;
-   padding-top: 5px;
-   padding-right: 30px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 100px;
-  margin: 2px;
-  margin-right: -20px;
-  cursor: pointer;
-  text-shadow: 2px 2px 2px #000;
-  
+   z-index: 3;
+   background-color: transparent;
+   background-image: url('../img/next.svg');
+   border: none;
+   color: transparent;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 100px;
+   cursor: pointer;
+   background-repeat: no-repeat;
+   background-size: 70px 70px;
+   margin-right: -35px;
 }
 
 
 .prevBtn:hover{
-  color: rgb(255, 255, 255);
-  background-image: radial-gradient(rgba(0, 21, 255, 0.5), transparent, transparent);
+  background-image: url('../img/prev.svg'), radial-gradient(rgba(0, 21, 255, 0.416) 50%, transparent, transparent);
 
 }
 
 .nextBtn:hover{
-  background-image: radial-gradient(rgba(0, 21, 255, 0.5), transparent, transparent);
-  color: rgb(255, 255, 255);
+  background-image: url('../img/next.svg'), radial-gradient(rgba(0, 21, 255, 0.416) 50%, transparent, transparent);
 
 }
 
@@ -612,3 +605,189 @@ body {
    }
  }
 
+ @media only screen and (max-device-width: 480px){
+  .container{
+    display: grid;
+    grid-template-rows: auto calc(100vh - 170px);
+    
+ 
+ }
+
+.navbutton{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 4em;
+
+  
+
+}
+.navbutton_pressed{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 4em;
+  
+
+}
+
+.label{
+  font-size: 3em;
+  padding-left: 200px;
+}
+
+.gallery img{
+  width: 300px;
+  height: 300px;
+}
+
+.imagegallery{
+  width: 85%;
+}
+.close{
+  width: 50px;
+  height: 50px;
+}
+
+.modalTxt{
+  font-size: 3em;
+  text-align: center;
+}
+
+.entryIndexIndicator{
+  font-size: 3.5em;
+}
+
+.entry{
+  border-width: 10px;
+}
+.modalNav{
+top: 80%;
+
+}
+
+
+.prevBtn{
+background-color: rgba(0, 0, 0, 0.7);
+background-size: 100%;
+width: 150px;
+height: 150px;
+border-radius: 100%;
+}
+
+.nextBtn{
+  background-color: rgba(0, 0, 0, 0.7);
+background-size: 100%;
+width: 150px;
+height: 150px;
+margin-right: 0px;
+border-radius: 100%;
+}
+
+
+
+
+.mail_container{
+   padding-top: 20px;
+   padding-bottom: 10px;
+   border-width: 10px;
+}
+
+ .mail_list{
+  
+  border-style: inset;
+  border-color: rgb(108, 0, 0);
+  border-width: 10px;
+  background-color: rgb(108, 0, 0);
+      padding: 30px;
+      padding-bottom: 15px;
+      max-width: 700px;
+      display: flex;
+      flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   object-fit: contain;
+
+ }
+ .mail_ui{
+  border-width: 10px;
+  border-style: outset;
+  border-color: #8d0000;
+  background-color: #8d0000;
+  accent-color: #ff0000;
+  
+  
+  min-height: 300px;
+  width: 100%;
+  font-weight: bolder;
+  font-size: 2em;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  margin: 0px;
+  color: #ffffff;
+  text-shadow: 2px 2px 2px #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ 
+ }
+
+ .mail_header{
+  border-width: 10px;
+  font-weight: bolder;
+  color: #ff0000;
+  text-shadow: 2px 2px 2px #000;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  font-size: 3em;
+  padding-left: 30px;
+  padding-right: 30px;
+ }
+ 
+
+
+
+ .about_wrapper{
+  display: flex;
+  flex-direction: column;
+   
+   align-items: center;
+ 
+
+  
+  padding: 0px;
+  padding-top: 20px;
+  height: 100%;
+  width: 100%;
+  
+  
+ }
+
+ .about_title_wrapper{
+  position: relative;
+  align-items: center;
+  border-style: inset;
+  border-color: rgb(108, 0, 0);
+  background-color: rgb(108, 0, 0);
+  max-width: 700px;
+border-width: 10px;
+  
+}
+
+
+.about_title{
+  font-size: 3.5em;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  color: #ff0000;
+  text-shadow: 2px 2px 2px #000;
+
+}
+
+
+
+ }

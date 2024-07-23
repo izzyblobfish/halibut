@@ -21,7 +21,7 @@ function toggle(id) {
 
 */
 
-var divs = ["about", "commission", "updates"];
+var divs = ["about", "links", "commission", "updates"];
 var visibleDivId = null;
 function toggle(divId) {
   if(visibleDivId === divId) {

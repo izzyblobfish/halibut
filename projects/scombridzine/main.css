@@ -1,0 +1,232 @@
+body{
+	margin: 0;
+	padding: 0;
+	scrollbar-color: black rgb(0, 255, 174);
+  	scrollbar-width: thin;
+    
+    background-color: blue;
+    background-image:  url("gee1.png"), linear-gradient( to right,rgb(0, 0, 0),rgb(0, 0, 164), rgb(0, 0, 164),rgb(0, 0, 164), rgb(0, 0, 164), rgb(0, 0, 164), rgb(0, 0, 164), rgb(0, 0, 0));
+    font-weight: bold;
+    overflow: auto;
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed;
+    background-size: 100px 100px, cover;
+    background-position: -30px -30px, 0px;
+}
+
+::-webkit-scrollbar {
+
+	background-color: rgb(0, 255, 174);
+	
+	
+  }
+  
+  ::-webkit-scrollbar-track {
+	background: rgb(0, 255, 174);
+	
+  }
+
+
+  
+  ::-webkit-scrollbar-thumb {
+	background: rgb(0, 0, 0);
+    border: 3px rgb(0, 255, 174) solid;
+    border-radius: 100vh;
+	
+  }
+
+
+.wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    background-color: rgb(38, 0, 255);
+    background-image: linear-gradient(rgb(0, 255, 174), rgb(183, 255, 232));
+    margin: 0 auto;
+    width: 80%;
+    max-width: 600px;
+    height: calc(100vh + 6px);
+    flex-direction: column;
+    -webkit-box-shadow:inset 0px 3px 0px 3px rgb(255, 255, 255), 0px 0px 5px 5px rgb(0, 0, 0);
+    -moz-box-shadow:inset 0px 3px 0px 3px rgb(255, 255, 255), 0px 0px 5px 5px rgb(0, 0, 0);
+    box-shadow:inset 0px 3px 0px 3px rgb(255, 255, 255), 0px 0px 5px 5px rgb(0, 0, 0);
+    margin-top: -6px;
+    padding-top: 6px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -ms-overflow-style: auto;    
+}
+
+
+
+.main_text{
+
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+.header{
+
+    background-color: rgb(0, 0, 0);
+    padding: 0px;
+    border-top: 3px solid rgb(255, 255, 255);
+    border-bottom: 3px solid rgb(255, 255, 255);
+    padding: 5px;
+   
+    font-size: 17px;
+    color: rgb(0, 255, 174);
+    padding-left: 20px;
+    padding-right: 20px;
+   
+}
+
+.body{
+
+    font-size: 20px;
+    margin: 0px;
+    margin-top: 0px;
+    margin-bottom: -20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-top: 20px;
+/*   margin-left: 30px;
+    margin-right: 30px;
+   
+   
+   
+    background-image: linear-gradient(to right, transparent, rgb(171, 248, 226), transparent); */
+ background-color:rgb(0, 255, 174);
+    color: rgb(0, 0, 0);
+    z-index: -100;
+    border-left: 3px rgb(255, 255, 255) solid;
+    border-right: 3px rgb(255, 255, 255) solid;
+
+    
+}
+
+p{
+    margin: 0px;
+    margin-top: 10px;
+
+}
+
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    width: calc(100% + 6px);
+    border-top: 3px solid rgb(255, 255, 255);
+    border-bottom: 3px solid rgb(255, 255, 255);
+    
+
+}
+
+
+
+
+
+
+
+
+.link_button{
+    display: flex;
+    font-size: 17px;
+    text-align: center;
+    background-color: rgb(0, 0, 164);
+    margin: 20px;
+    padding: 10px;
+    border: 3px solid rgb(0, 255, 174);
+    box-shadow: 0px 0px 0px 4px rgb(0, 0, 0) inset;
+    height: 30px;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+}
+
+.link_button:hover{
+
+    background-color: rgb(255, 255, 255);
+    border: 3px rgb(255, 255, 255) solid;
+    font-style: italic;
+}
+
+@media only screen and (max-width: 438px) {
+    .buttons {
+        flex-direction: column;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+    .link_button{
+        margin: 5px;
+    }
+  }
+
+
+.back{
+    margin-top: 20px;
+    background-color: black;
+    padding: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid rgb(0, 255, 174);
+    box-shadow: 0px 0px 0px 4px rgb(0, 0, 0) inset;
+}
+
+.back:hover{
+background-color: white;
+border: 3px solid rgb(255, 255, 255);
+font-style: italic;
+
+}
+
+a:link{
+    color:rgb(0, 255, 174);
+    text-decoration: none;
+
+}
+
+a:visited {
+    color:rgb(0, 255, 174);
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+a:active{
+color: blue;
+    text-decoration: none;
+}
+
+a.link:link{
+    color:rgb(0, 0, 164);
+    text-decoration: none;
+
+}
+
+a.link:visited{
+    color:rgb(0, 0, 164);
+    text-decoration: none;
+
+}
+
+a.link:hover{
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+}
