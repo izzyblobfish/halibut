@@ -666,24 +666,27 @@ top: 80%;
 
 
 .prevBtn{
-background-color: rgba(0, 0, 0, 0.7);
 background-size: 100%;
 width: 150px;
-height: 150px;
-border-radius: 100%;
+height: auto;
+
 }
 
 .nextBtn{
-  background-color: rgba(0, 0, 0, 0.7);
 background-size: 100%;
 width: 150px;
-height: 150px;
+height: auto;
 margin-right: 0px;
-border-radius: 100%;
+
 }
 
+.prevBtn:hover{
+  background-image: url('../img/prev.svg'), none;
+}
 
-
+.nextBtn:hover{
+  background-image: url('../img/next.svg'), none;
+}
 
 .mail_container{
    padding-top: 20px;
