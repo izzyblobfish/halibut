@@ -667,15 +667,15 @@ top: 80%;
 
 .prevBtn{
 background-size: 100%;
-width: 150px;
-height: auto;
+width: 1.5em;
+height: 3em;
 
 }
 
 .nextBtn{
 background-size: 100%;
-width: 150px;
-height: auto;
+width: 1.5em;
+height: 3em;
 margin-right: 0px;
 
 }
