@@ -498,6 +498,7 @@ body {
 
 }
 .nextBtn{
+  
   position: fixed;
   right: 0px;
    z-index: 3;
@@ -507,12 +508,13 @@ body {
    color: transparent;
    text-align: center;
    text-decoration: none;
-   display: inline-block;
    font-size: 100px;
    cursor: pointer;
    background-repeat: no-repeat;
    background-size: 70px 70px;
-   margin-right: -35px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 
