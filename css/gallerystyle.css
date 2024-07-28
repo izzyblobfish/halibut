@@ -493,6 +493,8 @@ body {
    display: flex;
    justify-content: center;
    align-items: center;
+   width: 70px;
+   height: 70px;
    
 
 
@@ -511,6 +513,8 @@ body {
    font-size: 100px;
    cursor: pointer;
    background-repeat: no-repeat;
+   width: 70px;
+   height: 70px;
    background-size: 70px 70px;
    display: flex;
    justify-content: center;
