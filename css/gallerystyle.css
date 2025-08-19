@@ -41,7 +41,7 @@ body {
  .nav_buttons{
     text-align: center;
     display: grid;
-    grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr;
     z-index: 1;
     border-bottom: 7px solid black;
    
@@ -395,10 +395,29 @@ body {
 
 }
 
+.label_list{
+  list-style: none;
+  margin-top: -10px;
+  margin-left: -45px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-size: 1.1em;
+  color: #ff0000;
+  text-shadow: 2px 2px 2px #000;
+ 
+}
 
 
+.list_style{
 
+list-style: none;
 
+}
+
+li {
+  margin: 5px 0;
+}
 
 
  @media (max-width: 1800px) {
@@ -486,7 +505,7 @@ body {
    color: transparent;
    text-align: center;
    text-decoration: none;
-   font-size: 100px;
+   font-size: 6em;
    cursor: pointer;
    background-repeat: no-repeat;
    background-size: 70px 70px;
@@ -495,6 +514,7 @@ body {
    align-items: center;
    width: 70px;
    height: 70px;
+   
    
 
 
@@ -510,7 +530,7 @@ body {
    color: transparent;
    text-align: center;
    text-decoration: none;
-   font-size: 100px;
+   font-size: 6em;
    cursor: pointer;
    background-repeat: no-repeat;
    width: 70px;
@@ -519,6 +539,7 @@ body {
    display: flex;
    justify-content: center;
    align-items: center;
+ 
 }
 
 
@@ -611,7 +632,7 @@ body {
    }
  }
 
- @media only screen and (max-device-width: 480px){
+ @media only screen and (max-device-width: 600px){
   .container{
     display: grid;
     grid-template-rows: auto calc(100vh - 170px);
@@ -640,9 +661,24 @@ body {
   padding-left: 200px;
 }
 
+.label_list{
+ 
+  font-size: 2.5em;
+  
+  padding-left: 230px;
+  padding-top: -10px;
+  
+ 
+}
+
+
+
+
+
 .gallery img{
   width: 300px;
   height: 300px;
+  margin: 0;
 }
 
 .imagegallery{
@@ -666,7 +702,7 @@ body {
   border-width: 10px;
 }
 .modalNav{
-top: 80%;
+top: 0%;
 
 }
 
@@ -675,6 +711,7 @@ top: 80%;
 background-size: 100%;
 width: 1.2em;
 height: 3em;
+margin-left: 3.5em;
 
 }
 
@@ -682,7 +719,7 @@ height: 3em;
 background-size: 100%;
 width: 1.2em;
 height: 3em;
-margin-right: 0px;
+margin-right: 3.5em;
 
 }
 
@@ -802,3 +839,4 @@ border-width: 10px;
 
 
  }
+
