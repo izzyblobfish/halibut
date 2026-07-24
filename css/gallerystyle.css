@@ -749,11 +749,22 @@ border: none;
   border: none;
 }
 
+
 .nextBtn:hover{
   background-image: url('../img/next.svg'), none;
   background-color: transparent;
   border: none;
 }
+
+.prevBtn:active{
+   background-color: transparent;
+  border: none;
+}
+.nextBtn:active{
+   background-color: transparent;
+  border: none;
+}
+
 
 .mail_container{
    padding-top: 20px;
