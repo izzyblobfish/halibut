@@ -244,6 +244,19 @@ a:link {
 
 }
 
+.emphasis2{
+
+   font-size: 15px;
+   color: #0008ff;
+   font-style: italic;
+
+}
+.emphasis3{
+
+  text-decoration: underline;
+
+}
+
 .tab{
 
    margin-left: 30px;
